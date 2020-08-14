@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #fcfefd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-header {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 2.2em;
+  font-weight: bold;
+  font-family: Rochester;
+  color: #e4db86;
+}
+
+.header-wrapper {
+  text-align: center;
+  /* display: flex; */
+}
+
+.header-wrapper li:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.header-wrapper li {
+  padding: 10px 10%;
+  display: inline;
+}
+
+.mm-img {
+  background-image: url(./img/mnm.png);
+  background-color: rgba(255, 255, 240, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 185px;
+  width: 350px;
+  position: absolute;
+  left: 60%;
+  top: 70%;
+}
+
+.group-img {
+  display: block;
+  /* padding-top: 20px; */
+  background-image: url(./img/Twicesuu.png);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /* flex-grow: 1; */
+  /* width: 100%; */
+  height: inherit;
+  /* min-height: 100%; */
+}
+
+.img-wrapper {
+  height: 90vh;
+}
+
+.group-img span {
+  position: absolute;
+  color: #e4db86;
+  width: 50%;
+  /* overflow: hidden; */
+  font-size: 4em;
+  animation: span 5s linear infinite;
+  transform: translateX(100%);
+}
+
+@keyframes span {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.main-footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  text-align: center;
+  color: #e4db86;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
